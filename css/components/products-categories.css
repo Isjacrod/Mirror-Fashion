@@ -1,0 +1,24 @@
+.products-categories {
+    background-color: var(--color-main-2);
+    text-transform: uppercase;
+    text-indent: 10px;
+    font-weight: bold;
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 5px 5px 0 0;
+}
+
+.products-categories > .categories_title {
+    line-height: 2.6em;
+}
+
+.products-categories > .list_categories > .category_item {
+    background-color: var(--color-main-f);
+    line-height: 2.1em;
+    margin-bottom: 2px;
+}
+
+.products-categories > .list_categories > .category_item > .category_link {
+    text-decoration: none;
+    color: var(--color-main-0);
+}

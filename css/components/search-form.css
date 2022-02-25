@@ -1,0 +1,10 @@
+.search-form > .text_input {
+    border-radius: 1em;
+    border: 1px solid var(--color-main-1-2);
+    width: 170px;
+    height: 20px;
+}
+
+.search-form > .search_button {
+    vertical-align: middle;
+}

@@ -1,0 +1,15 @@
+.navigationAside {
+    width: 230px;
+    margin-right: 10px;
+    float: left;
+}
+
+.navigationAside > .searchArea {
+    background-color: var(--color-main-2);
+    padding: 10px;
+    border-radius: 2%;
+}
+
+.navigationAside > .searchArea > .subtitle3 {
+    text-transform: uppercase;
+}

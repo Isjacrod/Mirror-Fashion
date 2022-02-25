@@ -1,0 +1,29 @@
+.social-links {
+    width: 130px
+}
+
+.social-links > .social_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links .social_link {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -99999px;
+}
+
+.social-links .social_link[href*="twitter"] {
+    background-image: url(../../img/twitter.png);
+}
+
+.social-links .social_link[href*="facebook"] {
+    background-image: url(../../img/facebook.png);
+}
+
+.social-links .social_link[href*="youtube"] {
+    background-image: url(../../img/googleplus.png);
+}

@@ -1,0 +1,25 @@
+.footer-default {
+    color: var(--color-main-1-2);
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../../img/fundo-rodape.png");
+    padding: 20px;
+}
+
+.footer-default > .footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--container-width);
+    margin: auto;
+}
+
+.footer-default.-about_variation {
+    background-image: none;
+}
+
+.footer-default .logo-default.-sm {
+    width: 94px;
+}
