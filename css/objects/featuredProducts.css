@@ -18,10 +18,10 @@
 }
 
 .featuredProducts > .productsPannel.-news {
-    background-color: var(--color-bg-pink1);
+    background-color: var(--color-bg-pink-1);
 }
 .featuredProducts > .productsPannel.-best_sellers {
-    background-color: var(--color-bg-blue1);
+    background-color: var(--color-bg-blue-1);
 }
 
 .featuredProducts > .productsPannel > .pannel_title {
