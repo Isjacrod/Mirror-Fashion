@@ -4,8 +4,17 @@ p {
     line-height: 1.3;
 }
 
+:is(section, h1, h2, h3) p::first-letter {
+    text-transform: capitalize;
+}
+
+:is(h1, h2, h3, section) p:first-of-type::first-letter {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .about-image.-bc2  {
-    width: fit-content;
     text-align: center;
     padding: 1em;
     margin: 30px;
@@ -16,6 +25,10 @@ p {
 .about-image.-centro_de_distribuicao {
     margin-left: auto;
     margin-right: auto;
+    width: 60%;
+}
+.about-image img {
+    width: 100%;
 }
 
 .about-image.-familia_pelho {
@@ -28,7 +41,23 @@ p {
     margin-top: 10px;
 }
 
-.list-styled {
-    list-style: disc inside;
+.section_diferentials .diferentials_list {
+    padding-left: 3ch;
+}
+
+.section_diferentials .list-styled {
+    list-style: disc;
     line-height: 1.5;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .about-image.-centro_de_distribuicao {
+        box-sizing: border-box;
+        width: 95%;
+    }
+    p {
+        padding: 0 0.1em;
+        text-align: justify;
+    }
 }

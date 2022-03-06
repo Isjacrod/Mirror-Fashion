@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/generics/reset.css">
+    <link rel="stylesheet" href="css/elements/defaults.css">
+    <link rel="stylesheet" href="css/settings/colors.css">
+    <link rel="stylesheet" href="css/settings/fonts.css">
+    <link rel="stylesheet" href="css/settings/sizes.css">
+    <link rel="stylesheet" href="css/components/main-header.css">
+    <link rel="stylesheet" href="css/components/titles.css">
+    <link rel="stylesheet" href="css/objects/productForm.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/components/fieldset-color.css">
+    <link rel="stylesheet" href="css/components/fieldset-size.css">
+
+    <title>Product</title>
+</head>
+
+<body data-theme="light">
+    <div class="container">
+        <header class="main-header">
+            <h1>
+                <a href="./index.html">
+                    <img class="logo-default -lg" alt="Logo da Mirror Fashion Clique para ir para home"
+                        src="img/logo.png">
+                </a>
+            </h1>
+            <span class="shopping-bag">Nenhum item na sacola</span>
+            <nav class="navigation-bar">
+                <ul>
+                    <li class="nav_item"><a class="link-default" href="account.html">Sua Conta</a></li>
+                    <li class="nav_item"><a class="link-default" href="wishlist.html">Lista de Desejos</a></li>
+                    <li class="nav_item"><a class="link-default" href="fidelityCard.html">Cartão Fidelidade</a></li>
+                    <li class="nav_item"><a class="link-default" href="about.html">Sobre</a></li>
+                    <li class="nav_item"><a class="link-default" href="help.html">Ajuda</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="main-product">
+            <h1 class="title"> Camiseta Ecko Caveira Bad to The Bone </h1>
+            <p class="price">por apenas R$ 48,95</p>
+            <form action="" class="productForm" id="_product-form">
+                <fieldset class="fieldset-color">
+                    <legend class="legend">Escolha a cor:</legend>
+                    <input type="radio" name="color" class="color_input" id="green" checked>
+                    <label class="color_label" for="green">Cor Verde</label>
+                    <input type="radio" name="color" class="color_input" id="red">
+                    <label class="color_label" for="red">Cor Vermelha</label>
+                    <input type="radio" name="color" class="color_input" id="blue">
+                    <label class="color_label" for="blue">Cor Azul</label>
+                </fieldset>
+                <figure class="product_figure">
+                    <img src="img/produtos/foto15-verde.png" alt="" class="product_image">
+                </figure>
+                <fieldset class="fieldset-size">
+                    <legend class="legend">Escolha o tamanho:</legend>
+                    <input oninput="size_choose.value=this.value" id="_size_input" name="size" class="size_input"
+                        type="range">
+                    <output name="size_choose" class="size_output" for="_size_input"></output>
+                </fieldset>
+                <input class="main-button buy_button" type="button" value="comprar">
+            </form>
+            <section class="productDetails">
+                <h2 class="subtitle">Detalhes do produto</h2>
+                <p class="short_description">Camiseta confortável ideal para eventos casuais</p>
+                <p class="long_description">Camiseta manga curta, gola redonda. Possuí estampa de Caveira e descritivo
+                    frontal e lisa nas costas</p>
+                <table class="specs-table">
+                    <thead class="table_head">
+                        <th class="property">Característica</th>
+                        <th class="value">Detalhe</th>
+                    </thead>
+                    <tbody class="table_body">
+                        <tr class="table_row">
+                            <td class="table_data">Modelo</td>
+                            <td class="table_data">Cardigã 7845</td>
+                        </tr>
+                        <tr class="table_row">
+                            <td class="table_data">Materia</td>
+                            <td class="table_data">Algodão e poliester</td>
+                        </tr>
+                        <tr class="table_row">
+                            <td class="table_data">Cores</td>
+                            <td class="table_data">Azul, Rosa e Verde</td>
+                        </tr>
+                        <tr class="table_row">
+                            <td class="table_data">Lavagem</td>
+                            <td class="table_data">Lavar a mão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </div>
+
+</body>
+
+</html>

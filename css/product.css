@@ -1,0 +1,12 @@
+.main-product {
+    --content-padding: 0.4em;
+    background-color: var(--color-main-3);
+    padding-top: 1.5em;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+
+}
+
+.price {
+    font-style: italic;
+}

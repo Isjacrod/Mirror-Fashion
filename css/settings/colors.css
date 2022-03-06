@@ -1,12 +1,29 @@
-:root {
+body[data-theme="light"] {
     --color-main-0: #000;
     --color-main-1: #333;
     --color-main-1-2: #777;
     --color-main-2: #ccc;
     --color-main-3: #eee;
     --color-link-1: #036;
+    --color-link-2: #007dc6;
     --color-main-f: #fff;
-    --color-bg-pink-1: #ffb6c1;
-    --color-bg-blue-1: #add8e6;
+    --color-main-f-transparent: rgba(255,255,255,0.6);
+    --color-pink-1: #ffb6c1;
+    --color-blue-1: #add8e6;
+    --color-error-1: #f00;
+}
+
+body[data-theme="dark"] {
+    --color-main-0: #fff;
+    --color-main-1: #ddd;
+    --color-main-1-2: #999;
+    --color-main-2: #333;
+    --color-main-3: #222;
+    --color-link-1: #fda;
+    --color-link-2: #ff9d36;
+    --color-main-f: #000;
+    --color-main-f-transparent: rgba(0,0,0,0.6);
+    --color-pink-1: mediumvioletred ;
+    --color-blue-1: navy;
     --color-error-1: #f00;
 }

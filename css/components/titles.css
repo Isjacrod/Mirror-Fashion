@@ -6,6 +6,7 @@
 .title.-bg1 {
     text-indent: 1em;
     background-image: url("../../img/sobre-background.jpg");
+    color: var(--color-main-0);
 }
 
 .subtitle {
@@ -22,4 +23,15 @@
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 600px){
+    .title {
+        line-height: 1.2em;
+    }
+    .title.-bg1 {
+        text-indent: 0;
+        text-align: center;
+    }
 }

@@ -1,0 +1,14 @@
+.productForm {
+    margin-top: 1.5em;
+}
+
+.productForm > .product_figure {
+    width: 100%;
+    border: 0.1em solid var(--color-main-2);
+    margin-top: 0.5em;
+}
+.productForm > .product_figure > .product_image {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}

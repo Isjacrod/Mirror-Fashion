@@ -1,0 +1,21 @@
+.emj_calca::before {
+    content: '👖';
+}
+.emj_vestido::before {
+    content: '👗';
+}
+.emj_sapato::before {
+    content: '👞';
+}
+.emj_bolsa::before {
+    content: '👜';
+}
+.emj_oculos::before {
+    content: '👓';
+}
+.emj_saia::before {
+    content: '👙';
+}
+.emj_blusa::before {
+    content: '🧥';
+}

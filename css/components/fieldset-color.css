@@ -1,0 +1,35 @@
+.fieldset-color> .legend {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.fieldset-color > .color_input {
+    appearance: none;
+}
+
+.fieldset-color > .color_label {
+    border: 0.4em solid;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -99999px;
+    height: 1.6em;
+    width: 1.6em;
+    display: inline-block;
+}
+
+.fieldset-color > .color_input:checked + .color_label {
+    background-color: var(--color-main-0);
+}
+
+/* Colors Options */
+.fieldset-color > #green + .color_label {
+    border-color: lime;
+}
+
+.fieldset-color > #red + .color_label {
+    border-color: red;
+}
+.fieldset-color > #blue + .color_label {
+    border-color: blue;
+}

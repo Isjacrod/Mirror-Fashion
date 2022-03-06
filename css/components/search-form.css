@@ -1,14 +1,26 @@
+.search-form {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    column-gap: 1ch;
+}
+
 .search-form > .text_input {
     border-radius: 1em;
     border: 1px solid var(--color-main-1-2);
-    width: 170px;
-    height: 20px;
-}
-
-.search-form > .search_button {
-    vertical-align: middle;
+    height: 2ch;
+    flex-grow: 1;
 }
 
 .search-form .text_input:focus:invalid {
     outline: 1px solid var(--color-error-1);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+    .search-form > .search_button {
+        transform: scale(1.5);
+        margin-right: 2em
+    }
+
 }

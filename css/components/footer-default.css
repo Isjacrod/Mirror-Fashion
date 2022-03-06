@@ -1,11 +1,18 @@
 .footer-default {
+    --footer-height: 80px;
+    --footer-margin-top: 2em;
+}
+.footer-default {
+    height: var(--footer-height);
+    width: 100%;
     color: var(--color-main-1-2);
     margin-top: 2em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-image: url("../../img/fundo-rodape.png");
-    padding: 20px;
+    position: absolute;
+    bottom: calc( (var(--footer-height) + var(--footer-margin-top)) * -1 );
 }
 
 .footer-default > .footer_wrapper {
@@ -13,11 +20,13 @@
     justify-content: space-between;
     align-items: center;
     width: var(--container-width);
-    margin: auto;
+    margin: 1em;
 }
 
 .footer-default.-about_variation {
     background-image: none;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .footer-default .logo-default.-sm {

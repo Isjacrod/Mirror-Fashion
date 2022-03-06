@@ -1,5 +1,25 @@
-/*Não usado, preferi o float para estudo devido a apostila
-Porém se eu fosse fazer seria assim
-.featuredProducts {
+.categoriesAndBanner {
     display:flex;
-} */
+}
+
+.categoriesAndBanner > .featured-banner {
+    flex-grow: 1;
+    flex-basis: 60%;
+    flex-grow:1;
+}
+
+.categoriesAndBanner > .featured-banner > .banner_image {
+    object-fit: contain;
+    width: 100%;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+    .categoriesAndBanner {
+        flex-direction: column;
+    }
+    .categoriesAndBanner > .featured-banner {
+        flex-basis: auto;
+    }
+}
