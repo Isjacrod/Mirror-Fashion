@@ -1,0 +1,25 @@
+.specs-table {
+    margin-top: 1.5em;
+    border-spacing: 0.2em 0;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.specs-table > .table_head .table_data {
+    background-color: var(--color-main-1-2);
+    font-weight: bold;
+    color: var(--color-main-f);
+}
+
+.specs-table > .table_body > .table_row > .table_data:first-child {
+    font-style: italic;
+}
+
+
+.specs-table > .table_body > .table_row:nth-child(2n+0) {
+    background-color: var(--color-main-2);
+}
+
+.specs-table .table_data {
+    padding: 0.5em;
+}

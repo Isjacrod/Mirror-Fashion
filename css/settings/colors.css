@@ -8,6 +8,7 @@ body[data-theme="light"] {
     --color-link-2: #007dc6;
     --color-main-f: #fff;
     --color-main-f-transparent: rgba(255,255,255,0.6);
+    --color-main-0-transparent: rgba(0,0,0, 0.4);
     --color-pink-1: #ffb6c1;
     --color-blue-1: #add8e6;
     --color-error-1: #f00;
@@ -23,6 +24,7 @@ body[data-theme="dark"] {
     --color-link-2: #ff9d36;
     --color-main-f: #000;
     --color-main-f-transparent: rgba(0,0,0,0.6);
+    --color-main-0-transparent: rgba(255,255,255,0.4);
     --color-pink-1: mediumvioletred ;
     --color-blue-1: navy;
     --color-error-1: #f00;

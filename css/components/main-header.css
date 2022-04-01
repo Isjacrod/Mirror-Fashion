@@ -9,6 +9,12 @@
     margin: 0 auto 20px auto;
 }
 
+.main-header.-product {
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--color-main-2);
+}
+
 .main-header > h1 {
     height: 100%;
 }
@@ -56,7 +62,6 @@
         flex-direction: row;
         row-gap: 1em;
         height: max-content;
-        margin-bottom: 0.5em;
     }
 
     .main-header > h1 {

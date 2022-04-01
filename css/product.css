@@ -7,6 +7,19 @@
 
 }
 
-.price {
-    font-style: italic;
+.productDetails > :is(.subtitle, .short_description, .long_description) {
+    margin-top: 1.3em;
+}
+
+@media (min-width: 600px) {
+    .main-product {
+        position: relative;
+        margin-top: 2em;
+        background-color: var(--color-main-f);
+        padding-top: 0;
+    }
+    .main-product > .title {
+        padding-left: 42%;
+        line-height: 1.3em;
+    }
 }

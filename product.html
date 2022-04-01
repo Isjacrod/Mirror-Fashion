@@ -16,13 +16,16 @@
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/components/fieldset-color.css">
     <link rel="stylesheet" href="css/components/fieldset-size.css">
-
+    <link rel="stylesheet" href="css/components/button-default.css">
+    <link rel="stylesheet" href="css/components/specs-table.css">
+    <link rel="stylesheet" href="css/components/footer-default.css">
+    <meta name="theme-color" content="#ff0000">
     <title>Product</title>
 </head>
 
 <body data-theme="light">
     <div class="container">
-        <header class="main-header">
+        <header class="main-header -product">
             <h1>
                 <a href="./index.html">
                     <img class="logo-default -lg" alt="Logo da Mirror Fashion Clique para ir para home"
@@ -42,27 +45,27 @@
         </header>
         <section class="main-product">
             <h1 class="title"> Camiseta Ecko Caveira Bad to The Bone </h1>
-            <p class="price">por apenas R$ 48,95</p>
             <form action="" class="productForm" id="_product-form">
-                <fieldset class="fieldset-color">
+                <p class="price">por apenas R$ 48,95</p>
+                <fieldset class="fieldset fieldset-color">
                     <legend class="legend">Escolha a cor:</legend>
-                    <input type="radio" name="color" class="color_input" id="green" checked>
+                    <input type="radio" name="color" class="color_input" id="green">
                     <label class="color_label" for="green">Cor Verde</label>
                     <input type="radio" name="color" class="color_input" id="red">
                     <label class="color_label" for="red">Cor Vermelha</label>
-                    <input type="radio" name="color" class="color_input" id="blue">
+                    <input type="radio" name="color" class="color_input" id="blue" checked>
                     <label class="color_label" for="blue">Cor Azul</label>
                 </fieldset>
                 <figure class="product_figure">
-                    <img src="img/produtos/foto15-verde.png" alt="" class="product_image">
+                    <img src="img/produtos/foto15-verde.png" alt="foto do produto" class="product_image">
                 </figure>
-                <fieldset class="fieldset-size">
+                <fieldset class="fieldset fieldset-size">
                     <legend class="legend">Escolha o tamanho:</legend>
                     <input oninput="size_choose.value=this.value" id="_size_input" name="size" class="size_input"
                         type="range">
                     <output name="size_choose" class="size_output" for="_size_input"></output>
                 </fieldset>
-                <input class="main-button buy_button" type="button" value="comprar">
+                <a class="button-default -buy" href="./checkout.html">Comprar</a>
             </form>
             <section class="productDetails">
                 <h2 class="subtitle">Detalhes do produto</h2>
@@ -71,8 +74,8 @@
                     frontal e lisa nas costas</p>
                 <table class="specs-table">
                     <thead class="table_head">
-                        <th class="property">Característica</th>
-                        <th class="value">Detalhe</th>
+                        <th class="property table_data">Característica</th>
+                        <th class="value table_data">Detalhe</th>
                     </thead>
                     <tbody class="table_body">
                         <tr class="table_row">
@@ -95,8 +98,25 @@
                 </table>
             </section>
         </section>
-    </div>
 
+    </div>
+    <footer class="footer-default">
+        <div class="footer_wrapper">
+            <img class="logo-default -sm" src="img/logo-rodape.png" alt="logo da mirror fashion">
+            <nav class="social-links">
+                <ul class="social_list">
+                    <li class="social_list_item"><a href="https://twitter.com" target="_blank"
+                            class="social_link">Twitter</a></li>
+                    <li class="social_list_item"><a href="https://youtube.com" target="_blank"
+                            class="social_link">YouTube</a></li>
+                    <li class="social_list_item"><a href="https://facebook.com" target="_blank"
+                            class="social_link">Facebook</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!--Js Scripts-->
+    <script src="./js/product.js"></script>
 </body>
 
 </html>

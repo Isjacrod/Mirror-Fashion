@@ -1,0 +1,35 @@
+.button-default {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--color-main-1-2);
+    transition: transform 100ms linear, filter 500ms linear;
+}
+
+.button-default:hover {
+    filter: brightness(150%);
+}
+
+.button-default:active {
+    transform: translate(1px, 1px);
+}
+
+.button-default.-buy {
+    background-color: #91BD3C;
+    color: #333;
+    box-shadow: 0 1px 3px #777;
+    display: block;
+    width: 100%;
+    margin: 1em 0em;
+}
+
+@media (min-width: 600px) {
+    .button-default.-buy {
+        width: auto;
+    }
+}

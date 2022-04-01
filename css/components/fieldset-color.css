@@ -1,35 +1,52 @@
-.fieldset-color> .legend {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-}
-
 .fieldset-color > .color_input {
-    appearance: none;
+    display: none;
 }
 
 .fieldset-color > .color_label {
-    border: 0.4em solid;
     border-radius: 50%;
     overflow: hidden;
     text-indent: -99999px;
-    height: 1.6em;
-    width: 1.6em;
-    display: inline-block;
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fieldset-color > .color_label::after {
+    content: '';
+    visibility: hidden;
+    width: 50%;
+    height: 50%;
+    background-color: var(--color-main-0);
+    margin: auto;
+    border-radius: 50%;
 }
 
 .fieldset-color > .color_input:checked + .color_label {
-    background-color: var(--color-main-0);
+    border: 0.3em solid var(--color-main-0-transparent);
+}
+
+.fieldset-color > .color_input:checked + .color_label::after {
+    visibility: visible;
 }
 
 /* Colors Options */
 .fieldset-color > #green + .color_label {
-    border-color: lime;
+    background-color: lime;
 }
 
 .fieldset-color > #red + .color_label {
-    border-color: red;
+    background-color: red;
 }
 .fieldset-color > #blue + .color_label {
-    border-color: blue;
+    background-color: blue;
+}
+
+@media (min-width: 600px) {
+    .fieldset-color > .color_label {
+        width: 2.5em;
+        height: 2.5em;
+    }
 }
