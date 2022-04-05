@@ -55,5 +55,9 @@
         width: 230px;
         vertical-align: top;
     }
+
+    .productForm > .button-default.-buy {
+        width: 50%;
+    }
 }
 
